@@ -2,6 +2,12 @@
   "format": 1,
   "releases": [
     {
+      "version": "0.3.0-rc.2",
+      "date": "2026-10-31",
+      "page": "https://github.com/therealaustin/TrueGrid/releases/tag/v0.3.0-rc.2",
+      "notes": "### Player\n- Windows: ASIO audio interfaces in the preview player. Right-click the speaker, *Output device…*, and pick ASIO\n  as the device type (beside Windows Audio and DirectSound). Most ASIO drivers serve one app at a time, so close\n  Engine DJ or Serato first if they hold the same interface.\n- Cue output (#67): on an interface with more than two outputs, *Output device…* lets you tick the pair the preview\n  plays on (3/4 for headphones or cue). Remembered for each device; back to 1/2 if a device no longer has that pair.\n  The speaker's menu says where it's playing.\n- Smooth playhead (#69): the player redraws on each refresh of your monitor (60, 120, 144, 240 Hz...) instead of\n  30 times a second, and the playhead moves smoothly between audio blocks. Settings > Display > *Animation frame\n  rate* caps it (30 to 240 fps) or sets Unlimited.\n- Reduce motion (#69): Settings > Display; follows macOS, Windows or GNOME's setting unless you choose. It turns off\n  the fade on an accepted genre suggestion; the playhead still moves.\n\n### App icon (#70)\n- TrueGrid has its own icon, the beat-grid mark from the header (first beat in cyan), in the Dock, taskbar,\n  Alt-Tab and the window title.\n- Linux: the download includes a menu entry and icons; run `./install-desktop-entry.sh` once to add TrueGrid to\n  your app launcher.\n\n### Export to device: drive tools (#31)\n- The preview says how long copying should take, from a short write and read test on the drive.\n- Lower-quality copies: when the drive already has, say, a 128 kbps MP3 of a FLAC you're exporting, *Lower-quality\n  copies…* lets you pick, file by file, which ones to replace. Both are kept unless you tick one; a replaced copy\n  goes to `.truegrid/replaced` on the drive once yours is copied and checked. CLI: `--replace-lower-quality`.\n- Mirror mode: music TrueGrid copied in an earlier export that isn't in this one moves to `.truegrid/trash`, so the\n  drive holds just this export. Listed and asked about separately; music TrueGrid didn't copy is never moved; undo\n  puts it back. CLI: `--mirror`."
+    },
+    {
       "version": "0.3.0-rc.1",
       "date": "2026-10-31",
       "page": "https://github.com/therealaustin/TrueGrid/releases/tag/v0.3.0-rc.1",
